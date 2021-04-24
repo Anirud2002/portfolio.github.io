@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+} 
+
+body {
+  background: #007CEC;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 93%;
+  margin: 30px auto;
+  background: #222222;
+  border-radius: 40px;
+  transition: .5s ease-in all;
+}
+header{
+  padding: 0px 50px;
+}
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.text-and-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.text-and-logo h1:nth-child(1) {
+  width: 44px;
+  height: 44px;
+  font-weight: 800;
+  font-size: 30px;
+  background-color: #007CEC;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.text-and-logo h1:nth-child(2) {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: white !important;
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 14px;
+}
+.burger{
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown-item{
+  position: relative;
+  display: block;
+}
+.hidden-ul{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  position: absolute;
+  top: 60px;
+  left: 30px;
+ background: #292929;
+ border-radius: 8px;
+ opacity: 0;
+ pointer-events: none;
+ transition: .2s all ease-in;
+ z-index: 10;
+}
+.hidden-ul.show{
+  top: 30px;
+  opacity: 1;
+  pointer-events: all;
+}
+.hidden-ul li a{
+  margin-left: 0;
+}
+#contact-heading{
+    background: #252525;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-top: 2px solid #444444;
+    border-bottom: 2px solid #444444;
+}
+#contact-heading h1{
+    font-weight: 600;
+    font-size: 38px;
+}
+
+#contact-heading p{
+    position: absolute;
+    top: 10%;
+    right: 50px
+}
+
+#map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.map{
+    width: 80%;
+    height: 180px;
+}
+
+#forms{
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-left{
+    width: 35%;
+}
+.c-left div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.c-left i{
+    color: #007CEC;
+    font-size: 32px;
+    margin-right: 30px;
+}
+
+.c-right{
+    margin-left: 30px;
+    flex: 1;
+    width: 65%;
+}
+
+.c-right h1{
+    margin-bottom: 30px;position: relative;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+  
+.c-right h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #444444;
+    bottom: 0;
+    height: 2px;
+  }
+  
+.c-right h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20%;
+    background: #007CEC;
+    bottom: 0;
+    height: 2px;
+  }
+
+form{
+    display: flex;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.input-fields input{
+    margin-bottom: 20px;
+    border: 2px solid #444444;
+    padding: 5px 20px;
+    background: #222222;
+    color: #444444;
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+}
+
+.input-fields button{
+    border: 2px solid #007CEC;
+    padding: 5px 10px;
+    background: #464646;
+    color: white;
+    border-radius: 50px;
+    width: 80%;
+    height: 40px;
+}
+.message-field{
+    width: 100%;
+
+    display: flex;
+}
+.message-field textarea{
+    border: 2px solid #444444;
+    padding: 5px 20px;
+    background: #222222;
+    color: #444444;
+    border-radius: 8px;
+    width: 100%;
+    height: 165px;
+}
+
+footer {
+    color: white;
+    padding: 10px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 2px solid #444444;
+  }
+  
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  footer ul li {
+    margin-left: 20px;
+    font-size: 14px;
+  color: #444444;
+}
+.upper-arrow{
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #444444;
+  position: fixed;
+  left: 95%;
+  bottom: 10px;
+  transition: .7s ease;
+  opacity: 0;
+  cursor: pointer;
+
+}
+.upper-arrow.active{
+  bottom: 50px;
+  opacity: 1;
+}
+
+.upper-arrow::before{
+  content: "\005E";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+}
+
+@media (max-width: 940px){
+  body{
+    padding: 0;
+  }
+  .burger{
+    display: block;
+    z-index: 100;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0px;
+    background: #222222;
+    padding: 0 0px;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -110%;
+    background: #292929;
+    z-index: 10;
+    flex-direction: column;
+    line-height: 5rem;
+    justify-content: center;
+    transition: .5s ease;
+  }
+  nav ul.show{
+    left: 0;
+  }
+  nav ul li a{
+    font-size: 32px;
+  }
+  .hidden-ul{
+    display: none;
+  }
+  #forms{
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  .c-left{
+    width: 90%;
+  }
+  .c-left div{
+    margin-bottom: 35px;
+  }
+  .c-right{
+    width: 90%;
+  }
+  .burger{
+    display: block;
+    z-index: 100;
+  }
+  footer{
+    font-size: 8px;
+  }
+}
