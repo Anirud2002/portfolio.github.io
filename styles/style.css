@@ -109,13 +109,15 @@ nav ul li a {
  background: #292929;
  border-radius: 8px;
  opacity: 0;
- pointer-events: none;
+ visibility: hidden;
+
  transition: .2s all ease-in;
 }
 .hidden-ul.show{
   top: 30px;
   opacity: 1;
-  pointer-events: all;
+
+  visibility: visible;
 }
 .hidden-ul li a{
   margin-left: 0;

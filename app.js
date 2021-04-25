@@ -67,6 +67,7 @@ dropDown.addEventListener("mouseover", ()=>{
     return
 });
 dropDown.addEventListener("mouseout", ()=>{
-    hiddenList.classList.remove("show");
+        hiddenList.classList.remove("show");
+ 
     return
-})
+});
